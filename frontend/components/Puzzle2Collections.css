@@ -1,0 +1,42 @@
+.P2scroll-container {
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    align-items: center; /* Add this line */
+    background-color: #515151; /* Replace with your desired color */
+    height: 50px; /* Add this line, replacing 100px with your desired height */
+    z-index: 6;
+  }
+  
+  .P2scroll-text {
+    display: flex;
+    animation: P2scroll 80s linear infinite;
+  }
+  
+  
+  .P2filled {  /* Replace with your desired color */
+    font-style: italic ;
+    margin-right: 0.2em; /* Adjust this to manage spacing between repeating text */
+    color: #000000; /* Replace with your desired color */
+    font-size: 170px; 
+    /* Add any other styles you want */
+  }
+  
+  .P2outline {
+    -webkit-text-stroke: 6px #000;  /* set stroke color and width */
+    color: #00000000;  /* set the fill color */
+    font-style: italic;
+    margin-right: 0.2em; /* Adjust this to manage spacing between repeating text */
+    font-size: 170px; 
+    /* Add any other styles you want */
+  }
+  
+  
+  
+  
+  
+  @keyframes P2scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  

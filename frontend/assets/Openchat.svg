@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1000" height="1000" viewBox="0 0 1000 1000" xml:space="preserve">
+<desc>Created with Fabric.js 3.5.0</desc>
+<defs>
+</defs>
+<rect x="0" y="0" width="100%" height="100%" fill="#ffffff"/>
+<g transform="matrix(1.5105 0 0 1.5105 498.2357 500.0035)" id="katman_1">
+<linearGradient id="SVGID_5" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-1 0.0015 0.0019 1.2591 891.5386 -791.5048)" x1="43.6643" y1="1349.6703" x2="43.6643" y2="713.1902">
+<stop offset="0%" style="stop-color:rgb(251,176,59);stop-opacity: 1"/>
+<stop offset="100%" style="stop-color:rgb(240,90,36);stop-opacity: 1"/>
+</linearGradient>
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: url(#SVGID_5); fill-rule: nonzero; opacity: 1;" transform=" translate(-850.05, -600.55)" d="M 531.8 600.5 c 0 175.8 142.5 318.3 318.2 318.3 s 318.3 -142.5 318.3 -318.2 S 1025.8 282.3 850 282.3 S 531.8 424.7 531.8 600.5 z M 673.2 600.5 c 0 -97.6 79.2 -176.8 176.8 -176.8 s 176.8 79.2 176.8 176.8 c 0 97.6 -79.2 176.8 -176.8 176.8 C 752.3 777.3 673.2 698.1 673.2 600.5 z" stroke-linecap="round"/>
+</g>
+<g transform="matrix(1.5105 0 0 1.5105 817.374 499.9327)" id="katman_1">
+<linearGradient id="SVGID_6" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.005 -0.2332 -0.3203 -1.3806 105.7596 2041.1807)" x1="1205.9855" y1="1167.7296" x2="1205.9855" y2="659.5853">
+<stop offset="0%" style="stop-color:rgb(95,37,131);stop-opacity: 1"/>
+<stop offset="100%" style="stop-color:rgb(237,30,121);stop-opacity: 1"/>
+</linearGradient>
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: url(#SVGID_6); fill-rule: nonzero; opacity: 1;" transform=" translate(-1061.3077, -600.5)" d="M 1034.1 341.1 c 144.8 100.3 180 297.7 78.6 441 c -21.4 30.3 -48 56.6 -78.6 77.8 L 952 743.8 c 80 -55.4 99.4 -164.5 43.4 -243.6 c -11.8 -16.7 -26.5 -31.3 -43.4 -43 L 1034.1 341.1 z" stroke-linecap="round"/>
+</g>
+<g transform="matrix(1.5105 0 0 1.5105 498.1716 499.9395)" id="katman_1">
+<circle style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(25,25,25); fill-rule: nonzero; opacity: 1;" cx="0" cy="0" r="176.8"/>
+</g>
+</svg>

@@ -1,0 +1,50 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
+
+
+.scroll-container {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  align-items: center; /* Add this line */
+  background-color: #000000; /* Replace with your desired color */
+  height: 300px; /* Add this line, replacing 100px with your desired height */
+  
+}
+
+
+
+
+.scroll-text {
+  display: flex;
+  animation: scroll 80s linear infinite;
+}
+
+
+.filled {  /* Replace with your desired color */
+  font-family: 'Poppins', sans-serif;
+  font-style: Black 900 Italic ;
+  margin-right: 0.2em; /* Adjust this to manage spacing between repeating text */
+  color: #ffffff; /* Replace with your desired color */
+  font-size: 170px; 
+  /* Add any other styles you want */
+}
+
+.outline {
+  font-family: 'Poppins', sans-serif;
+  -webkit-text-stroke: 3px #ffffff;  /* set stroke color and width */
+  color: #00000000;  /* set the fill color */
+  font-style: Black 900 Italic;
+  margin-right: 0.2em; /* Adjust this to manage spacing between repeating text */
+  font-size: 170px; 
+  /* Add any other styles you want */
+}
+
+
+
+
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}

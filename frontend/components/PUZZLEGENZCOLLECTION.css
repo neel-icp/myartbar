@@ -1,0 +1,37 @@
+.PGscroll-container {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  height: 300px;
+  z-index: 3;
+}
+
+.PGscroll-text {
+  display: flex;
+  animation: PGscroll 10s linear infinite;
+  width: 200%; /* Increase the width so we can duplicate the content */
+}
+
+@keyframes PGscroll {
+  0% { transform: translateX(-50%); } /* Starts at the half of the content */
+  100% { transform: translateX(0%); } /* Ends at the end of the content */
+}
+
+.PGfilled {
+  font-family: 'Poppins', sans-serif;
+  font-style: Black 900 Italic;
+  margin-right: 0.2em;
+  color: #ffffff;
+  font-size: 170px;
+}
+
+.PGoutline {
+  font-family: 'Poppins', sans-serif;
+  -webkit-text-stroke: 3px #ffffff;
+  color: #00000000;
+  font-style: Black 900 Italic;
+  margin-right: 0.2em;
+  font-size: 170px;
+}

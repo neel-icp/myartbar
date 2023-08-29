@@ -1,0 +1,47 @@
+.Escroll-container {
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    align-items: center; /* Add this line */
+    background-color: #000000; /* Replace with your desired color */
+    height: 400px; /* Add this line, replacing 100px with your desired height */
+    z-index: 3;
+  }
+  
+  
+  
+  
+  .Escroll-text {
+    display: flex;
+    animation: Escroll 80s linear infinite;
+  }
+  
+  
+  .Efilled {  /* Replace with your desired color */
+    font-family: 'Poppins', sans-serif;
+    font-style: Black 800 Italic;
+    font-style: italic ;
+    margin-right: 0.4em; /* Adjust this to manage spacing between repeating text */
+    color: #ffffff; /* Replace with your desired color */
+    font-size: 170px; 
+    /* Add any other styles you want */
+  }
+  
+  .Eoutline {
+    font-family: 'Poppins', sans-serif;
+    -webkit-text-stroke: 3px #ffffff;  /* set stroke color and width */
+    color: #00000000;  /* set the fill color */
+    font-style: Black 900 Italic;
+    margin-right: 0.2em; /* Adjust this to manage spacing between repeating text */
+    font-size: 170px; 
+  }
+  
+  
+  
+  
+  
+  @keyframes Escroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  
