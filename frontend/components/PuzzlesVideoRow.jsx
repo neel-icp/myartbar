@@ -29,7 +29,33 @@ import video25 from '/Puzzle/PUZZLE3D/024.mp4';
 import video26 from '/Puzzle/PUZZLE3D/025.mp4';
 import video27 from '/Puzzle/PUZZLE3D/026.mp4';
 
-
+import thumbnail1 from '/Puzzle/PUZZLE3D/00_thumbnail.jpg';
+import thumbnail2 from '/Puzzle/PUZZLE3D/01_thumbnail.jpg';
+import thumbnail3 from '/Puzzle/PUZZLE3D/02_thumbnail.jpg';
+import thumbnail4 from '/Puzzle/PUZZLE3D/03_thumbnail.jpg';
+import thumbnail5 from '/Puzzle/PUZZLE3D/04_thumbnail.jpg';
+import thumbnail6 from '/Puzzle/PUZZLE3D/05_thumbnail.jpg';
+import thumbnail7 from '/Puzzle/PUZZLE3D/06_thumbnail.jpg';
+import thumbnail8 from '/Puzzle/PUZZLE3D/07_thumbnail.jpg';
+import thumbnail9 from '/Puzzle/PUZZLE3D/08_thumbnail.jpg';
+import thumbnail10 from '/Puzzle/PUZZLE3D/09_thumbnail.jpg';
+import thumbnail11 from '/Puzzle/PUZZLE3D/010_thumbnail.jpg';
+import thumbnail12 from '/Puzzle/PUZZLE3D/011_thumbnail.jpg';
+import thumbnail13 from '/Puzzle/PUZZLE3D/012_thumbnail.jpg';
+import thumbnail14 from '/Puzzle/PUZZLE3D/013_thumbnail.jpg';
+import thumbnail15 from '/Puzzle/PUZZLE3D/014_thumbnail.jpg';
+import thumbnail16 from '/Puzzle/PUZZLE3D/015_thumbnail.jpg';
+import thumbnail17 from '/Puzzle/PUZZLE3D/016_thumbnail.jpg';
+import thumbnail18 from '/Puzzle/PUZZLE3D/017_thumbnail.jpg';
+import thumbnail19 from '/Puzzle/PUZZLE3D/018_thumbnail.jpg';
+import thumbnail20 from '/Puzzle/PUZZLE3D/019_thumbnail.jpg';
+import thumbnail21 from '/Puzzle/PUZZLE3D/020_thumbnail.jpg';
+import thumbnail22 from '/Puzzle/PUZZLE3D/021_thumbnail.jpg';
+import thumbnail23 from '/Puzzle/PUZZLE3D/022_thumbnail.jpg';
+import thumbnail24 from '/Puzzle/PUZZLE3D/023_thumbnail.jpg';
+import thumbnail25 from '/Puzzle/PUZZLE3D/024_thumbnail.jpg';
+import thumbnail26 from '/Puzzle/PUZZLE3D/025_thumbnail.jpg';
+import thumbnail27 from '/Puzzle/PUZZLE3D/026_thumbnail.jpg';
 
 // Video list
 const videos = [
@@ -61,7 +87,36 @@ const videos = [
   video26,
   video27,
 ];
-
+// Thumbnails array
+const thumbnails = [
+  thumbnail1,
+  thumbnail2,
+  thumbnail3,
+  thumbnail4,
+  thumbnail5,
+  thumbnail6,
+  thumbnail7,
+  thumbnail8,
+  thumbnail9,
+  thumbnail10,
+  thumbnail11,
+  thumbnail12,
+  thumbnail13,
+  thumbnail14,
+  thumbnail15,
+  thumbnail16,
+  thumbnail17,
+  thumbnail18,
+  thumbnail19,
+  thumbnail20,
+  thumbnail21,
+  thumbnail22,
+  thumbnail23,
+  thumbnail24,
+  thumbnail25,
+  thumbnail26,
+  thumbnail27,
+];
 
 
 const PuzzlesVideoRow = () => {
@@ -98,6 +153,7 @@ const PuzzlesVideoRow = () => {
             key={index}
             src={video}
             autoPlay
+            poster={thumbnails[index]} // Add the poster attribute here
             loop
             muted
             playsInline // Add playsInline attribute
@@ -109,6 +165,7 @@ const PuzzlesVideoRow = () => {
             key={index + videos.length}
             src={video}
             autoPlay
+            poster={thumbnails[index]} // Add the poster attribute here
             loop
             muted
             playsInline // Add playsInline attribute

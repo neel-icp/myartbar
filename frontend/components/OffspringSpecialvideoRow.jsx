@@ -23,6 +23,54 @@ import video19 from '/Offsprings/OFFSPRINGSSPECIAL/018.mp4';
 import video20 from '/Offsprings/OFFSPRINGSSPECIAL/019.mp4';
 import video21 from '/Offsprings/OFFSPRINGSSPECIAL/020.mp4';
 
+// Import thumbnails
+import thumbnail1 from '/Offsprings/OFFSPRINGSSPECIAL/00_thumbnail.jpg';
+import thumbnail2 from '/Offsprings/OFFSPRINGSSPECIAL/01_thumbnail.jpg';
+import thumbnail3 from '/Offsprings/OFFSPRINGSSPECIAL/02_thumbnail.jpg';
+import thumbnail4 from '/Offsprings/OFFSPRINGSSPECIAL/03_thumbnail.jpg';
+import thumbnail5 from '/Offsprings/OFFSPRINGSSPECIAL/04_thumbnail.jpg';
+import thumbnail6 from '/Offsprings/OFFSPRINGSSPECIAL/05_thumbnail.jpg';
+import thumbnail7 from '/Offsprings/OFFSPRINGSSPECIAL/06_thumbnail.jpg';
+import thumbnail8 from '/Offsprings/OFFSPRINGSSPECIAL/07_thumbnail.jpg';
+import thumbnail9 from '/Offsprings/OFFSPRINGSSPECIAL/08_thumbnail.jpg';
+import thumbnail10 from '/Offsprings/OFFSPRINGSSPECIAL/09_thumbnail.jpg';
+import thumbnail11 from '/Offsprings/OFFSPRINGSSPECIAL/010_thumbnail.jpg';
+import thumbnail12 from '/Offsprings/OFFSPRINGSSPECIAL/011_thumbnail.jpg';
+import thumbnail13 from '/Offsprings/OFFSPRINGSSPECIAL/012_thumbnail.jpg';
+import thumbnail14 from '/Offsprings/OFFSPRINGSSPECIAL/013_thumbnail.jpg';
+import thumbnail15 from '/Offsprings/OFFSPRINGSSPECIAL/014_thumbnail.jpg';
+import thumbnail16 from '/Offsprings/OFFSPRINGSSPECIAL/015_thumbnail.jpg';
+import thumbnail17 from '/Offsprings/OFFSPRINGSSPECIAL/016_thumbnail.jpg';
+import thumbnail18 from '/Offsprings/OFFSPRINGSSPECIAL/017_thumbnail.jpg';
+import thumbnail19 from '/Offsprings/OFFSPRINGSSPECIAL/018_thumbnail.jpg';
+import thumbnail20 from '/Offsprings/OFFSPRINGSSPECIAL/019_thumbnail.jpg';
+import thumbnail21 from '/Offsprings/OFFSPRINGSSPECIAL/020_thumbnail.jpg';
+
+// Thumbnails list
+const thumbnails = [
+  thumbnail1,
+  thumbnail2,
+  thumbnail3,
+  thumbnail4,
+  thumbnail5,
+  thumbnail6,
+  thumbnail7,
+  thumbnail8,
+  thumbnail9,
+  thumbnail10,
+  thumbnail11,
+  thumbnail12,
+  thumbnail13,
+  thumbnail14,
+  thumbnail15,
+  thumbnail16,
+  thumbnail17,
+  thumbnail18,
+  thumbnail19,
+  thumbnail20,
+  thumbnail21,
+];
+
 // Video list
 const videos = [
   video1,
@@ -82,6 +130,7 @@ const OffspringSpecialvideoRow = () => {
             key={index}
             src={video}
             autoPlay
+            poster={thumbnails[index]} // Add the poster attribute here
             loop
             muted
             playsInline // Add playsInline attribute
@@ -93,6 +142,7 @@ const OffspringSpecialvideoRow = () => {
             key={index + videos.length}
             src={video}
             autoPlay
+            poster={thumbnails[index]} // Add the poster attribute here
             loop
             muted
             playsInline // Add playsInline attribute

@@ -23,6 +23,7 @@
   .Pfilled {  /* Replace with your desired color */
     font-family: 'Poppins', sans-serif;
     font-style: Black 900 Italic ;
+    font-style: italic ;
     margin-right: 0.4em; /* Adjust this to manage spacing between repeating text */
     color: #ffffff; /* Replace with your desired color */
     font-size: 170px; 
@@ -34,6 +35,7 @@
     -webkit-text-stroke: 3px #ffffff;  /* set stroke color and width */
     color: #00000000;  /* set the fill color */
     font-style: Black 900 Italic;
+    font-style: italic ;
     margin-right: 0.2em; /* Adjust this to manage spacing between repeating text */
     font-size: 170px; 
   }

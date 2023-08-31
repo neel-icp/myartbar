@@ -25,14 +25,16 @@ const ESpan = styled.span`
   font-size: ${props => props.fontSize || '1em'};
   margin-bottom: ${props => props.fontSize === '3em' ? '20px' : '10px'};
   font-family: 'Poppins', sans-serif; 
+  font-style: italic ;
 `;
 
 const EggsContainer = styled.div`
-  display: flex;
-  justify-content: flex-start; // Align items to the left
-  align-items: flex-start;
-  padding: 40px; // Adjust as needed
-  z-index: 1;
+display: flex;
+justify-content: flex-start; // Align items to the left
+align-items: flex-start;
+padding: 40px; // Adjust as needed
+position: relative;
+z-index: 1;
 `;
 
 const EggsPuzzleInfoContainer = styled.div`
@@ -53,6 +55,7 @@ const EggsPopout = styled.span`
   
 `;
 */
+
 const EggsSpace = styled.span`
   font-size: ${props => props.fontSize || '1em'};
   margin-bottom: ${props => props.fontSize === '3em' ? '20px' : '10px'};
@@ -61,17 +64,17 @@ const EggsSpace = styled.span`
 `;
 
 const EggsText = styled.p`
-  text-align: left;
-  font-family: 'Comfortaa', cursive;
-  
-  
+text-align: left;
+font-family: 'Comfortaa', cursive;
+margin-right: 30px;
 `;
+
 
 const EggsSocialContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+  position: relative;
 `;
 
 const EggsSocialIcon = styled.a`

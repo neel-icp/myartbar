@@ -1,0 +1,49 @@
+.loading-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s;
+    z-index: 9999;
+  }
+  
+  .loading-container.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .loading-bar {
+    width: 200px;
+    height: 20px;
+    background-color: #d2d2d2;
+    position: relative;
+  }
+  
+  .loading-bar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #333;
+    animation: loadingAnimation 2s infinite;
+  }
+  
+  @keyframes loadingAnimation {
+    0% {
+      width: 0%;
+    }
+    50% {
+      width: 100%;
+    }
+    100% {
+      width: 0%;
+    }
+  }
+  

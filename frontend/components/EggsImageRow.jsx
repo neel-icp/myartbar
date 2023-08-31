@@ -1,8 +1,9 @@
 import React from 'react';
 import './EggsImageRow.css';
+import thumbnail1 from '/Eggs/EGGVideos/09_thumbnail.jpg';
 
 const imagesData = [
-    { src: '/Eggs/EGGVideos/09.mp4', alt: 'Image 1', text: 'ANIMATED SPECIAL EGGs', description: 'MINT NO: 1-20', totalNFTs: 'TOTAL NFTs: 20', isVideo: true },
+    { src: '/Eggs/EGGVideos/09.mp4',thumbnail: thumbnail1, alt: 'Image 1', text: 'ANIMATED SPECIAL EGGs', description: 'MINT NO: 1-20', totalNFTs: 'TOTAL NFTs: 20', isVideo: true },
     { src: '/Eggs/EGGImages/026.png', alt: 'Image 2', text: '"THE" EGGS', description: 'MINT NO: 21-4444 ', totalNFTs: 'TOTAL NFTs: 10' },
 ];
 
@@ -13,7 +14,7 @@ const EggsImagerow = () => {
         <div key={index}>
           <div className="Eggsimage-container">
             {image.isVideo ? (
-              <video src={image.src} alt={image.alt} className="Eggsimage" autoPlay muted loop />
+              <video src={image.src} alt={image.alt} className="Eggsimage" autoPlay muted loop poster={image.thumbnail}/>
             ) : (
               <img src={image.src} alt={image.alt} className="Eggsimage" />
             )}

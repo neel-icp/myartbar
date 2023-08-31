@@ -77,7 +77,7 @@ useEffect(() => {
   const rowWidth = rowRef.current.offsetWidth;
   const imageCount = images.length;
   const animationDuration = (rowWidth / 100) * imageCount; // Adjust the animation duration based on the row width and image count
-  const speedMultiplier = 10; // Adjust the speed multiplier (higher value for faster speed)
+  const speedMultiplier = 5; // Adjust the speed multiplier (higher value for faster speed)
 
   const marqueeAnimation = `marquee ${animationDuration / speedMultiplier}s linear infinite`;
   rowRef.current.style.animation = marqueeAnimation;

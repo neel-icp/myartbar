@@ -58,6 +58,7 @@ const Span = styled.span`
   font-size: ${props => props.fontSize || '1em'};
   margin-bottom: ${props => props.fontSize === '3em' ? '20px' : '10px'};
   font-family: 'Poppins', sans-serif; 
+  font-style: italic ;
   
 `;
 

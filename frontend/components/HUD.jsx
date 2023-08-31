@@ -141,31 +141,31 @@ const HUD = () => {
       <p>Here are few of the channels you can reach me on.</p>
       <ul>
         <li>
-          <a href="https://twitter.com/my-profile">
+          <a href="https://twitter.com/icpuzzles">
             <SocialLogo src={twitterLogo} alt="Twitter logo" />
             Twitter
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/my-profile/">
+          <a href="https://www.instagram.com/myartbar_/">
             <SocialLogo src={instagramLogo} alt="Instagram logo" />
             Instagram
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/my-profile/">
+          <a href="https://github.com/neel-icp">
             <SocialLogo src={GithubLogo} alt="Github logo" />
             Github
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/my-profile/">
+          <a href="neel.icp@gmail.com">
             <SocialLogo src={EmailLogo} alt="E-mail logo" />
             E-mail
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/my-profile/">
+          <a href="https://www.linkedin.com/in/neel-bhanushali-8928a7285">
             <SocialLogo src={LinkedinLogo} alt="Linkedin" />
             Linkedin
           </a>

@@ -101,7 +101,7 @@ const ThreeDText = () => {
     };
   }, []); // Empty dependency array means this effect runs once on mount and cleanup on unmount
 
-  return <div ref={containerRef} style={{ width: '500px', height: '500px',  left: '-120px', marginTop: '-200px' ,position: 'relative' }} />;
+  return <div ref={containerRef} style={{ width: '50vh', height: '50vh',  left: '-20vh', marginTop: '-12vh' ,position: 'relative' }} />;
 
 };
 

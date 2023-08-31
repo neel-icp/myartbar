@@ -10,6 +10,28 @@ import video6 from '/Puzzle/PUZZLE2D/POSITIONS/5.mp4';
 import video7 from '/Puzzle/PUZZLE2D/POSITIONS/6.mp4';
 import video8 from '/Puzzle/PUZZLE2D/POSITIONS/7.mp4';
 
+// Import thumbnails
+import thumbnail1 from '/Puzzle/PUZZLE2D/POSITIONS/00_thumbnail.jpg';
+import thumbnail2 from '/Puzzle/PUZZLE2D/POSITIONS/1_thumbnail.jpg';
+import thumbnail3 from '/Puzzle/PUZZLE2D/POSITIONS/2_thumbnail.jpg';
+import thumbnail4 from '/Puzzle/PUZZLE2D/POSITIONS/3_thumbnail.jpg';
+import thumbnail5 from '/Puzzle/PUZZLE2D/POSITIONS/4_thumbnail.jpg';
+import thumbnail6 from '/Puzzle/PUZZLE2D/POSITIONS/5_thumbnail.jpg';
+import thumbnail7 from '/Puzzle/PUZZLE2D/POSITIONS/6_thumbnail.jpg';
+import thumbnail8 from '/Puzzle/PUZZLE2D/POSITIONS/7_thumbnail.jpg';
+
+// Thumbnails list
+const thumbnails = [
+  thumbnail1,
+  thumbnail2,
+  thumbnail3,
+  thumbnail4,
+  thumbnail5,
+  thumbnail6,
+  thumbnail7,
+  thumbnail8,
+];
+
 
 
 // Video list
@@ -60,6 +82,7 @@ const PuzzleVideoRow = () => {
             key={index}
             src={video}
             autoPlay
+            poster={thumbnails[index]} // Add the poster attribute here
             loop
             muted
             playsInline // Add playsInline attribute
@@ -71,6 +94,7 @@ const PuzzleVideoRow = () => {
             key={index + videos.length}
             src={video}
             autoPlay
+            poster={thumbnails[index]} // Add the poster attribute here
             loop
             muted
             playsInline // Add playsInline attribute

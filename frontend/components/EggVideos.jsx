@@ -20,6 +20,24 @@ import video16 from '/Eggs/EGGVideos/015.mp4';
 import video17 from '/Eggs/EGGVideos/016.mp4';
 import video18 from '/Eggs/EGGVideos/017.mp4';
 
+import thumbnail1 from '/Eggs/EGGVideos/00_thumbnail.jpg';
+import thumbnail2 from '/Eggs/EGGVideos/01_thumbnail.jpg';
+import thumbnail3 from '/Eggs/EGGVideos/02_thumbnail.jpg';
+import thumbnail4 from '/Eggs/EGGVideos/03_thumbnail.jpg';
+import thumbnail5 from '/Eggs/EGGVideos/04_thumbnail.jpg';
+import thumbnail6 from '/Eggs/EGGVideos/05_thumbnail.jpg';
+import thumbnail7 from '/Eggs/EGGVideos/06_thumbnail.jpg';
+import thumbnail8 from '/Eggs/EGGVideos/07_thumbnail.jpg';
+import thumbnail9 from '/Eggs/EGGVideos/08_thumbnail.jpg';
+import thumbnail10 from '/Eggs/EGGVideos/09_thumbnail.jpg';
+import thumbnail11 from '/Eggs/EGGVideos/010_thumbnail.jpg';
+import thumbnail12 from '/Eggs/EGGVideos/011_thumbnail.jpg';
+import thumbnail13 from '/Eggs/EGGVideos/012_thumbnail.jpg';
+import thumbnail14 from '/Eggs/EGGVideos/013_thumbnail.jpg';
+import thumbnail15 from '/Eggs/EGGVideos/014_thumbnail.jpg';
+import thumbnail16 from '/Eggs/EGGVideos/015_thumbnail.jpg';
+import thumbnail17 from '/Eggs/EGGVideos/016_thumbnail.jpg';
+import thumbnail18 from '/Eggs/EGGVideos/017_thumbnail.jpg';
 
 // Video list
 const videos = [
@@ -41,6 +59,27 @@ const videos = [
   video16,
   video17,
   video18,
+];
+
+const thumbnails = [
+  thumbnail1,
+  thumbnail2,
+  thumbnail3,
+  thumbnail4,
+  thumbnail5,
+  thumbnail6,
+  thumbnail7,
+  thumbnail8,
+  thumbnail9,
+  thumbnail10,
+  thumbnail11,
+  thumbnail12,
+  thumbnail13,
+  thumbnail14,
+  thumbnail15,
+  thumbnail16,
+  thumbnail17,
+  thumbnail18,
 ];
 
 const EggVideoRow = () => {
@@ -76,24 +115,27 @@ const EggVideoRow = () => {
   <video
     key={index}
     src={video}
+    poster={thumbnails[index]} // Add the poster attribute here
     autoPlay
     loop
     muted
-    playsInline // Add playsInline attribute
+    playsInline
     style={{ width: '400px', height: '400px', objectFit: 'cover', marginRight: '0px' }}
   />
 ))}
 {videos.map((video, index) => (
   <video
-    key={index + videos.length}
+    key={index}
     src={video}
+    poster={thumbnails[index]} // Add the poster attribute here
     autoPlay
     loop
     muted
-    playsInline // Add playsInline attribute
+    playsInline
     style={{ width: '400px', height: '400px', objectFit: 'cover', marginRight: '0px' }}
   />
 ))}
+
       </div>
       <style>
         {`

@@ -48,6 +48,104 @@ import video44 from '/Offsprings/01023.mp4';
 import video45 from '/Offsprings/01097.mp4';
 import video46 from '/Offsprings/01108.mp4';
 
+// Import thumbnails
+import thumbnail1 from '/Offsprings/00_thumbnail.jpg';
+import thumbnail2 from '/Offsprings/01_thumbnail.jpg';
+import thumbnail3 from '/Offsprings/02_thumbnail.jpg';
+import thumbnail4 from '/Offsprings/03_thumbnail.jpg';
+import thumbnail5 from '/Offsprings/04_thumbnail.jpg';
+import thumbnail6 from '/Offsprings/05_thumbnail.jpg';
+import thumbnail7 from '/Offsprings/06_thumbnail.jpg';
+import thumbnail8 from '/Offsprings/07_thumbnail.jpg';
+import thumbnail9 from '/Offsprings/08_thumbnail.jpg';
+import thumbnail10 from '/Offsprings/09_thumbnail.jpg';
+import thumbnail11 from '/Offsprings/010_thumbnail.jpg';
+import thumbnail12 from '/Offsprings/011_thumbnail.jpg';
+import thumbnail13 from '/Offsprings/012_thumbnail.jpg';
+import thumbnail14 from '/Offsprings/013_thumbnail.jpg';
+import thumbnail15 from '/Offsprings/014_thumbnail.jpg';
+import thumbnail16 from '/Offsprings/015_thumbnail.jpg';
+import thumbnail17 from '/Offsprings/016_thumbnail.jpg';
+import thumbnail18 from '/Offsprings/017_thumbnail.jpg';
+import thumbnail19 from '/Offsprings/018_thumbnail.jpg';
+import thumbnail20 from '/Offsprings/019_thumbnail.jpg';
+import thumbnail21 from '/Offsprings/020_thumbnail.jpg';
+import thumbnail22 from '/Offsprings/021_thumbnail.jpg';
+import thumbnail23 from '/Offsprings/022_thumbnail.jpg';
+import thumbnail24 from '/Offsprings/023_thumbnail.jpg';
+import thumbnail25 from '/Offsprings/024_thumbnail.jpg';
+import thumbnail26 from '/Offsprings/025_thumbnail.jpg';
+import thumbnail27 from '/Offsprings/026_thumbnail.jpg';
+import thumbnail28 from '/Offsprings/027_thumbnail.jpg';
+import thumbnail29 from '/Offsprings/00044_thumbnail.jpg';
+import thumbnail30 from '/Offsprings/00052_thumbnail.jpg';
+import thumbnail31 from '/Offsprings/00082_thumbnail.jpg';
+import thumbnail32 from '/Offsprings/00104_thumbnail.jpg';
+import thumbnail33 from '/Offsprings/00116_thumbnail.jpg';
+import thumbnail34 from '/Offsprings/00124_thumbnail.jpg';
+import thumbnail35 from '/Offsprings/00125_thumbnail.jpg';
+import thumbnail36 from '/Offsprings/00235_thumbnail.jpg';
+import thumbnail37 from '/Offsprings/00279_thumbnail.jpg';
+import thumbnail38 from '/Offsprings/00284_thumbnail.jpg';
+import thumbnail39 from '/Offsprings/00449_thumbnail.jpg';
+import thumbnail40 from '/Offsprings/00846_thumbnail.jpg';
+import thumbnail41 from '/Offsprings/00850_thumbnail.jpg';
+import thumbnail42 from '/Offsprings/00862_thumbnail.jpg';
+import thumbnail43 from '/Offsprings/01021_thumbnail.jpg';
+import thumbnail44 from '/Offsprings/01023_thumbnail.jpg';
+import thumbnail45 from '/Offsprings/01097_thumbnail.jpg';
+import thumbnail46 from '/Offsprings/01108_thumbnail.jpg';
+
+// Thumbnails list
+const thumbnails = [
+  thumbnail1,
+  thumbnail2,
+  thumbnail3,
+  thumbnail4,
+  thumbnail5,
+  thumbnail6,
+  thumbnail7,
+  thumbnail8,
+  thumbnail9,
+  thumbnail10,
+  thumbnail11,
+  thumbnail12,
+  thumbnail13,
+  thumbnail14,
+  thumbnail15,
+  thumbnail16,
+  thumbnail17,
+  thumbnail18,
+  thumbnail19,
+  thumbnail20,
+  thumbnail21,
+  thumbnail22,
+  thumbnail23,
+  thumbnail24,
+  thumbnail25,
+  thumbnail26,
+  thumbnail27,
+  thumbnail28,
+  thumbnail29,
+  thumbnail30,
+  thumbnail31,
+  thumbnail32,
+  thumbnail33,
+  thumbnail34,
+  thumbnail35,
+  thumbnail36,
+  thumbnail37,
+  thumbnail38,
+  thumbnail39,
+  thumbnail40,
+  thumbnail41,
+  thumbnail42,
+  thumbnail43,
+  thumbnail44,
+  thumbnail45,
+  thumbnail46,
+];
+
 
 
 // Video list
@@ -135,6 +233,7 @@ const OffspringVideoRow = () => {
             key={index}
             src={video}
             autoPlay
+            poster={thumbnails[index]} // Add the poster attribute here
             loop
             muted
             playsInline // Add playsInline attribute
@@ -146,6 +245,7 @@ const OffspringVideoRow = () => {
             key={index + videos.length}
             src={video}
             autoPlay
+            poster={thumbnails[index]} // Add the poster attribute here
             loop
             muted
             playsInline // Add playsInline attribute

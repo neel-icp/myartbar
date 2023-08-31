@@ -12,7 +12,33 @@ import video8 from '/Puzzle/PUZZLE3D/ORGY/07.mp4';
 import video9 from '/Puzzle/PUZZLE3D/ORGY/08.mp4';
 import video10 from '/Puzzle/PUZZLE3D/ORGY/09.mp4';
 import video11 from '/Puzzle/PUZZLE3D/ORGY/010.mp4';
+// Import thumbnails
+import thumbnail1 from '/Puzzle/PUZZLE3D/ORGY/00_thumbnail.jpg';
+import thumbnail2 from '/Puzzle/PUZZLE3D/ORGY/01_thumbnail.jpg';
+import thumbnail3 from '/Puzzle/PUZZLE3D/ORGY/02_thumbnail.jpg';
+import thumbnail4 from '/Puzzle/PUZZLE3D/ORGY/03_thumbnail.jpg';
+import thumbnail5 from '/Puzzle/PUZZLE3D/ORGY/04_thumbnail.jpg';
+import thumbnail6 from '/Puzzle/PUZZLE3D/ORGY/05_thumbnail.jpg';
+import thumbnail7 from '/Puzzle/PUZZLE3D/ORGY/06_thumbnail.jpg';
+import thumbnail8 from '/Puzzle/PUZZLE3D/ORGY/07_thumbnail.jpg';
+import thumbnail9 from '/Puzzle/PUZZLE3D/ORGY/08_thumbnail.jpg';
+import thumbnail10 from '/Puzzle/PUZZLE3D/ORGY/09_thumbnail.jpg';
+import thumbnail11 from '/Puzzle/PUZZLE3D/ORGY/010_thumbnail.jpg';
 
+// Thumbnails list
+const thumbnails = [
+  thumbnail1,
+  thumbnail2,
+  thumbnail3,
+  thumbnail4,
+  thumbnail5,
+  thumbnail6,
+  thumbnail7,
+  thumbnail8,
+  thumbnail9,
+  thumbnail10,
+  thumbnail11,
+];
 
 // Video list
 const videos = [
@@ -63,6 +89,7 @@ const PuzzlesOrgyRow = () => {
             key={index}
             src={video}
             autoPlay
+            poster={thumbnails[index]} // Add the poster attribute here
             loop
             muted
             playsInline // Add playsInline attribute
@@ -74,6 +101,7 @@ const PuzzlesOrgyRow = () => {
             key={index + videos.length}
             src={video}
             autoPlay
+            poster={thumbnails[index]} // Add the poster attribute here
             loop
             muted
             playsInline // Add playsInline attribute

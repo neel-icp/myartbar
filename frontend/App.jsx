@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from 'react';
 import { createClient } from "@connect2ic/core"
 import { defaultProviders } from "@connect2ic/core/providers"
 import { ConnectButton, ConnectDialog, Connect2ICProvider } from "@connect2ic/react"
@@ -34,14 +34,37 @@ import OffspringsInfo from "./components/OffspringsInfo"
 import EggsInfo from "./components/EggsInfo"
 import Background from './components/Background';
 import BBlur from './components/Bblur';
+import Loading from './components/Loading';
+
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true); // State to track loading
+  const handleModelLoaded = () => {
+    setIsLoading(false);
+  };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  
+    const handleLoad = () => {
+      setIsLoading(false);
+    };
+  
+    if (document.readyState === 'complete') {
+      handleLoad();
+    } else {
+      window.addEventListener('load', handleLoad);
+    }
+  
+    return () => {
+      window.removeEventListener('load', handleLoad);
+    };
+  }, []);
   
   const connectButton = <ConnectButton />;
   return (
     <div className="App">
-      <BBlur />
-      <BackgroundScene />
+       <Loading isLoading={isLoading} />
+      <BackgroundScene onModelLoaded={handleModelLoaded} />
       <ConnectDialog />
       <div className="Header">
       <Header connectButton={connectButton} />
@@ -50,43 +73,53 @@ function App() {
       <BackgroundBlur />
       <div><HUD /></div>
      
+
       <div className="intro-container">
-      
-    <Intro /> 
-  </div>
+      <div id="HOME">
+      <Intro /> 
+    </div>
+    
   <div className="threeDModel-container">
     
     
+  </div>
   </div>
 </div>
     <div className="Collections"> 
     <Collections /> 
     </div>
+    <div id="ICPUZZLE">
     <Puzzle1Collections />
     <PuzzleCollections />
     <div className="Puzzle-content"> 
     <ICPuzzleInfo />
     <Puzzle2DImageRow />
     <PuzzleVideoRow />
+    </div>
+    <div id="PUZZLEGENZ">
     <PuzzleGenzCollections/>
     <PuzzleInfo />
     <Carousel />
     <PuzzlesVideoRow /> 
     <PuzzlesOrgyRow />
     <Puzzle2Collections />
-    {/* Add the PuzzleCollections component */}
+    </div>
     </div>
     <EggsCollections />
+    <div id="THEEGGsCOLLECTION">
     <EggsInfo />
     <div className="Eggs-content">
     <EggCarousel />
     <EggVideoRow />
     </div>
+    </div>
+    <div id="OFFSPRINGS">
     <OffspringCollections />
     <OffspringsInfo />
     <div className="Offsprings-content">
     <OffspringSpecialvideoRow />
     <OffspringvideoRow />
+    </div>
   </div>
 
 

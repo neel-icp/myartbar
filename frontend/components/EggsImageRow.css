@@ -3,7 +3,7 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  gap: -100px; /* Adjust as needed */
+ /* gap: -100px;  Adjust as needed */
 }
 
 .Eggsimage-container {
@@ -11,10 +11,11 @@
   position: relative;
   overflow: hidden;
   border-radius: 50%;
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   margin-bottom: 40px;
   margin-top: 40px;
+  
 }
 
 .Eggsimage {
@@ -27,4 +28,5 @@
 .Eggsimage-description,
 .Eggsimage-total-nfts {
   text-align: center;
+  font-family: 'Comfortaa', cursive;font-family: 'Comfortaa', cursive;
 }

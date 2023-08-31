@@ -8,7 +8,9 @@ const Intro = () => {
             <div className="hero-content">
                 <div className="intro-line">  
                     <h1 className="intro-heading">Hi, I'm</h1>       
-                    <ThreeDText />
+                    <div className="canvas-container">
+                        <ThreeDText />
+                    </div>
                 </div>
                 <div className="para-line">
                     <h2 className="creative-director-heading">Creative Director, UI/UX Designer 

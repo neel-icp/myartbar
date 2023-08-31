@@ -22,6 +22,7 @@
 .PGfilled {
   font-family: 'Poppins', sans-serif;
   font-style: Black 900 Italic;
+  font-style: italic ;
   margin-right: 0.2em;
   color: #ffffff;
   font-size: 170px;
@@ -32,6 +33,7 @@
   -webkit-text-stroke: 3px #ffffff;
   color: #00000000;
   font-style: Black 900 Italic;
+  font-style: italic ;
   margin-right: 0.2em;
   font-size: 170px;
 }

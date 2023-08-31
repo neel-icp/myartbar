@@ -1,7 +1,4 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
-
-
 .scroll-container {
   overflow: hidden;
   white-space: nowrap;
@@ -23,11 +20,12 @@
 
 .filled {  /* Replace with your desired color */
   font-family: 'Poppins', sans-serif;
-  font-style: Black 900 Italic ;
-  margin-right: 0.2em; /* Adjust this to manage spacing between repeating text */
-  color: #ffffff; /* Replace with your desired color */
-  font-size: 170px; 
-  /* Add any other styles you want */
+    font-style: Black 800 Italic;
+    font-style: italic ;
+    margin-right: 0.4em; /* Adjust this to manage spacing between repeating text */
+    color: #ffffff; /* Replace with your desired color */
+    font-size: 170px; 
+    /* Add any other styles you want */
 }
 
 .outline {
@@ -35,6 +33,7 @@
   -webkit-text-stroke: 3px #ffffff;  /* set stroke color and width */
   color: #00000000;  /* set the fill color */
   font-style: Black 900 Italic;
+  font-style: italic ;
   margin-right: 0.2em; /* Adjust this to manage spacing between repeating text */
   font-size: 170px; 
   /* Add any other styles you want */
